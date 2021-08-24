@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Video Js</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://kit.fontawesome.com/c383da0c90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main class="conteiner-video">
+    
+        <div class="EndedShow">
+
+            <button class="PrevVideo">
+                <i class="fas fa-fast-backward"></i>
+            </button>
+
+            <button class="LoopVideo">
+                <i class="fas fa-sync"></i>
+            </button>
+
+            <button class="NextVideo">
+                <i class="fas fa-fast-forward"></i>
+            </button>
+
+        </div>
+
+        <video src="/videos/Perro.mp4" class="video "></video>
+
+        <nav class="nav-controls">
+
+            <button class="buttonPlay">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <input type="range" class="InputVolume" value="100" step="10">
+
+            <button class="buttonAudio">
+                <i class="fas fa-volume-up"></i>
+            </button>
+
+            <input type="range" value="0" class="progessBar">
+
+            <small class="timeVideo">
+                00:00
+            </small>
+
+            <button class="buttonExpand">
+                <i class="fas fa-expand"></i>
+            </button>
+
+        </nav>
+
+    </main>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

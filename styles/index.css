@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(209, 181, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.conteiner-video{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 1220px;
+    min-width: 325px;
+}
+
+.video{
+    object-fit: cover;
+    width: 900px;
+    height: 500px;
+    border-top-right-radius: 7px ;
+    border-top-left-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-controls{
+    position: relative;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 7px ;
+    border-bottom-right-radius: 7px ;   
+    background-color: rgb(168, 116, 116); 
+    max-width: 1220px;
+}
+
+.nav-controls button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    
+}
+
+.progessBar{
+    width: 80%;
+}
+
+.InputVolume{
+    position: absolute;
+    width: 100px; 
+    transform: rotate(-90deg);
+    bottom: 95px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
+}
+
+.InputVolume.active{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.timeVideo{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "fira Code";
+
+}
+
+.EndedShow{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s opacity;
+}
+
+.EndedShow.active{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.EndedShow button{
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, .6);
+    font-size: 60px;
+    cursor: pointer;
+    transition: .4s color ease;
+
+}
+
+.EndedShow button:hover{
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.LoopVideo i{
+    font-size: 100px;
+
+}
+
